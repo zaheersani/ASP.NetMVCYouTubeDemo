@@ -2,7 +2,7 @@
 
 This GitHub Repository is maintained for Video Tutorials/Demos recorded and uploaded at YouTube Channel:
 
-https://www.youtube.com/channel/UCXP7rnxG2q3UPpxsqT9M-6g
+https://www.youtube.com/playlist?list=PLVQSBRbWnSsWZlahHre8jmvWdybflN_Qo
 
 To get very precise and specific about video tutorials, here is the breakdown:
 
