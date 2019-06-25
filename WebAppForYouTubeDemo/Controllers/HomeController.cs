@@ -23,9 +23,9 @@ namespace WebAppForYouTubeDemo.Controllers
 
         public ActionResult Demo()
         {
-            ViewBag.Message = "From Demo Action!";
+            ViewBag.DemoMsg = "From Demo Action!";
 
-            return View("About");
+            return View();
         }
 
         public ActionResult Contact()

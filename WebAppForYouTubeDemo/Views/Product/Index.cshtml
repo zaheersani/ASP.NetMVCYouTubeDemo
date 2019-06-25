@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Products</h2>
+
+@{
+
+
+    <ol>
+        @foreach (var item in ViewBag.Prods)
+        {
+
+            <li>@item</li>
+
+        }
+    </ol>
+
+}
+
+<h2>Customers</h2>
+
+@{
+    <ol>
+        @foreach (var item in ViewData["Customers"] as List<string>)
+        {
+            <li>@item</li>
+        }
+    </ol>
+}
