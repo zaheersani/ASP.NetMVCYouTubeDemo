@@ -20,6 +20,17 @@ This video demonstrates basics of ASP.Net MVC Application. These are the points 
 - Returning same View from two differenct Action Methods
 
 ## Adding Controller
+https://youtu.be/ep0Y87YaGDs
+
+This video demonstrate and discusses following:
+- Adding a Controller
+- Adding a View
+- Creating and Iterating List in View using Razor
+- Sending List from Controller to View
+- ViewBag
+- ViewData
+
+## Working with Model
 
 *This is in process*
 
