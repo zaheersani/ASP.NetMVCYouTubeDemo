@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
+using WebAppForYouTubeDemo.Models;
+
 namespace WebAppForYouTubeDemo.Controllers
 {
     public class ProductController : Controller
@@ -26,6 +28,28 @@ namespace WebAppForYouTubeDemo.Controllers
             ViewData["Customers"] = cList;
 
             return View();
+        }
+
+        public ActionResult Display()
+        {
+            Product product = new Product()
+            {
+                Name = "Laptop",
+                Brand = "Dell",
+                Price = 45000
+            };
+            return View(product);
+        }
+
+        public ActionResult Add()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult Add(Product product)
+        {
+            return View("Display", product);
         }
     }
 }

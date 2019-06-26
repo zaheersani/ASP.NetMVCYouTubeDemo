@@ -1,0 +1,24 @@
+﻿@model WebAppForYouTubeDemo.Models.Product
+
+@{
+    ViewBag.Title = "Add";
+}
+
+<h2>Add</h2>
+
+@using (Html.BeginForm())
+{
+    <div>
+        @Html.LabelFor(m => m.Name)
+        @Html.EditorFor(m => m.Name)
+    </div>
+    <div>
+        @Html.LabelFor(m => m.Brand)
+        @Html.EditorFor(m => m.Brand)
+    </div>
+    <div>
+        @Html.LabelFor(m => m.Price)
+        @Html.EditorFor(m => m.Price)
+    </div>
+    <input type="submit" class="btn btn-success" />
+}

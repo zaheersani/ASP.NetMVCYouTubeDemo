@@ -22,7 +22,7 @@ This video demonstrates basics of ASP.Net MVC Application. These are the points 
 ## Adding Controller
 https://youtu.be/ep0Y87YaGDs
 
-This video demonstrate and discusses following:
+This video demonstrates and discusses following:
 - Adding a Controller
 - Adding a View
 - Creating and Iterating List in View using Razor
@@ -31,8 +31,9 @@ This video demonstrate and discusses following:
 - ViewData
 
 ## Query String and Binding
+https://youtu.be/ZcAR5FOK1Bk
 
-This video demonstrate and discuss following:
+This video demonstrates and discuss following:
 - Default id parameter
 - Sending Data from URL Query String
 - Receiving Data from URL Query String
@@ -41,6 +42,15 @@ This video demonstrate and discuss following:
 ## Adding Model
 
 
+This video demonstrates and discuss following:
+- Adding a Model
+- Creating View based on Model
+- Sending Model from Controller to View
+- Displaying data of Model in View
+- Sending/Posting Model from View to Controller
+- Passing Model object from one action to another
+
+## Storing Data into Database (Code First Development)
 
 *This is in process*
 
