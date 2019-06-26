@@ -30,7 +30,17 @@ This video demonstrate and discusses following:
 - ViewBag
 - ViewData
 
-## Working with Model
+## Query String and Binding
+
+This video demonstrate and discuss following:
+- Default id parameter
+- Sending Data from URL Query String
+- Receiving Data from URL Query String
+- Passing Data to the View
+
+## Adding Model
+
+
 
 *This is in process*
 

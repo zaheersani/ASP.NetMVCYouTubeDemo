@@ -34,5 +34,12 @@ namespace WebAppForYouTubeDemo.Controllers
 
             return View();
         }
+
+        public ActionResult Table(int? id,string name)
+        {
+            ViewBag.Num = id;
+            ViewBag.Name = name;
+            return View();
+        }
     }
 }

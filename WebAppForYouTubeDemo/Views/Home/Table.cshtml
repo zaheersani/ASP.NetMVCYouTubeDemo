@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "Table";
+}
+
+<h2>@ViewBag.Num's Table of @ViewBag.Name</h2>
+
+@{ 
+    int? n = ViewBag.Num;
+    if (n != null)
+    {
+        for (int i = 1; i <= 10; i++)
+        {
+        <span>@n x @i = @(n * i)</span><br />
+            }
+        }
+    }
