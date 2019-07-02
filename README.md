@@ -62,11 +62,14 @@ This video demonstrates and discuss following:
 - Data Annotations
 
 ## Code First Development - Complex Models
+https://youtu.be/D5VFctwl0jM
 
 This video demonstrates and discuss following:
 - Relational Models
 - Foreign Key Relationship in Models
 - Entity Framework 
+
+## Database Development First
 
 *This is in process*
 
