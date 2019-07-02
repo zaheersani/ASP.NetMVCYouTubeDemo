@@ -40,7 +40,7 @@ This video demonstrates and discuss following:
 - Passing Data to the View
 
 ## Adding Model
-
+https://youtu.be/M06PpJ1n0CM
 
 This video demonstrates and discuss following:
 - Adding a Model
@@ -50,7 +50,17 @@ This video demonstrates and discuss following:
 - Sending/Posting Model from View to Controller
 - Passing Model object from one action to another
 
-## Storing Data into Database (Code First Development)
+## Code First Development using Entity Framework 6
+
+This video demonstrates and discuss following:
+- Entity Framework
+- Generating Controller using Scaffolding
+- CRUD (Create, Read, Update and Delete) Pages
+- Modifying Model
+- Database Migrations
+- Data Annotations
+
+## Code First Development - Complex Models
 
 *This is in process*
 
