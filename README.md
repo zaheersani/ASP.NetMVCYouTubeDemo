@@ -51,6 +51,7 @@ This video demonstrates and discuss following:
 - Passing Model object from one action to another
 
 ## Code First Development using Entity Framework 6
+https://youtu.be/JrPQQ3GKCg4
 
 This video demonstrates and discuss following:
 - Entity Framework
@@ -61,6 +62,11 @@ This video demonstrates and discuss following:
 - Data Annotations
 
 ## Code First Development - Complex Models
+
+This video demonstrates and discuss following:
+- Relational Models
+- Foreign Key Relationship in Models
+- Entity Framework 
 
 *This is in process*
 

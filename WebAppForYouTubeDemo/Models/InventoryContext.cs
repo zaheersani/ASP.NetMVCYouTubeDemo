@@ -20,5 +20,7 @@ namespace WebAppForYouTubeDemo.Models
         }
 
         public System.Data.Entity.DbSet<WebAppForYouTubeDemo.Models.Product> Products { get; set; }
+
+        public System.Data.Entity.DbSet<WebAppForYouTubeDemo.Models.Brand> Brands { get; set; }
     }
 }

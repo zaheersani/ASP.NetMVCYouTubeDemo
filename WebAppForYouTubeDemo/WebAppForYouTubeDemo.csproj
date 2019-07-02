@@ -132,24 +132,12 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\BrandsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ProductsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201907021513026_InitialCreate.cs" />
-    <Compile Include="Migrations\201907021513026_InitialCreate.Designer.cs">
-      <DependentUpon>201907021513026_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201907021523483_product updated.cs" />
-    <Compile Include="Migrations\201907021523483_product updated.Designer.cs">
-      <DependentUpon>201907021523483_product updated.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201907021534136_qty field added.cs" />
-    <Compile Include="Migrations\201907021534136_qty field added.Designer.cs">
-      <DependentUpon>201907021534136_qty field added.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\InventoryContext.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -197,6 +185,11 @@
     <Content Include="Views\Products\Details.cshtml" />
     <Content Include="Views\Products\Edit.cshtml" />
     <Content Include="Views\Products\Index.cshtml" />
+    <Content Include="Views\Brands\Create.cshtml" />
+    <Content Include="Views\Brands\Delete.cshtml" />
+    <Content Include="Views\Brands\Details.cshtml" />
+    <Content Include="Views\Brands\Edit.cshtml" />
+    <Content Include="Views\Brands\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -213,17 +206,6 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201907021513026_InitialCreate.resx">
-      <DependentUpon>201907021513026_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201907021523483_product updated.resx">
-      <DependentUpon>201907021523483_product updated.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201907021534136_qty field added.resx">
-      <DependentUpon>201907021534136_qty field added.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

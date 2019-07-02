@@ -10,112 +10,107 @@ using WebAppForYouTubeDemo.Models;
 
 namespace WebAppForYouTubeDemo.Controllers
 {
-    public class ProductsController : Controller
+    public class BrandsController : Controller
     {
         private InventoryContext db = new InventoryContext();
 
-        // GET: Products
+        // GET: Brands
         public ActionResult Index()
         {
-            var products = db.Products.Include(p => p.brandObj);
-            return View(products.ToList());
+            return View(db.Brands.ToList());
         }
 
-        // GET: Products/Details/5
+        // GET: Brands/Details/5
         public ActionResult Details(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Product product = db.Products.Find(id);
-            if (product == null)
+            Brand brand = db.Brands.Find(id);
+            if (brand == null)
             {
                 return HttpNotFound();
             }
-            return View(product);
+            return View(brand);
         }
 
-        // GET: Products/Create
+        // GET: Brands/Create
         public ActionResult Create()
         {
-            ViewBag.BrandId = new SelectList(db.Brands, "id", "Name");
             return View();
         }
 
-        // POST: Products/Create
+        // POST: Brands/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "id,Name,Price,Quantity,BrandId")] Product product)
+        public ActionResult Create([Bind(Include = "id,Name,Address,Country")] Brand brand)
         {
             if (ModelState.IsValid)
             {
-                db.Products.Add(product);
+                db.Brands.Add(brand);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            ViewBag.BrandId = new SelectList(db.Brands, "id", "Name", product.BrandId);
-            return View(product);
+            return View(brand);
         }
 
-        // GET: Products/Edit/5
+        // GET: Brands/Edit/5
         public ActionResult Edit(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Product product = db.Products.Find(id);
-            if (product == null)
+            Brand brand = db.Brands.Find(id);
+            if (brand == null)
             {
                 return HttpNotFound();
             }
-            ViewBag.BrandId = new SelectList(db.Brands, "id", "Name", product.BrandId);
-            return View(product);
+            return View(brand);
         }
 
-        // POST: Products/Edit/5
+        // POST: Brands/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "id,Name,Price,Quantity,BrandId")] Product product)
+        public ActionResult Edit([Bind(Include = "id,Name,Address,Country")] Brand brand)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(product).State = EntityState.Modified;
+                db.Entry(brand).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            ViewBag.BrandId = new SelectList(db.Brands, "id", "Name", product.BrandId);
-            return View(product);
+            return View(brand);
         }
 
-        // GET: Products/Delete/5
+        // GET: Brands/Delete/5
         public ActionResult Delete(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Product product = db.Products.Find(id);
-            if (product == null)
+            Brand brand = db.Brands.Find(id);
+            if (brand == null)
             {
                 return HttpNotFound();
             }
-            return View(product);
+            return View(brand);
         }
 
-        // POST: Products/Delete/5
+        // POST: Brands/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Product product = db.Products.Find(id);
-            db.Products.Remove(product);
+            Brand brand = db.Brands.Find(id);
+            db.Brands.Remove(brand);
             db.SaveChanges();
             return RedirectToAction("Index");
         }

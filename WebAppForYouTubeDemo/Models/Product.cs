@@ -22,6 +22,19 @@ namespace WebAppForYouTubeDemo.Models
         [Range(0, int.MaxValue)]
         public int Quantity { get; set; }
 
-        public string Brand { get; set; }
+        [Display(Name = "Brand")]
+        public int BrandId { get; set; }
+        public Brand brandObj { get; set; }
+    }
+
+    public class Brand
+    {
+        public int id { get; set; }
+
+        [Display(Name = "Brand Name")]
+        public string Name { get; set; }
+
+        public string Address { get; set; }
+        public string Country { get; set; }
     }
 }
